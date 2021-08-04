@@ -2,16 +2,32 @@
 
 ### How to Run?
 
-Just Clone This and It's ready guy 😪
+#### Steps
+
+- Open any terminal.
+- **CLONE THE REPO**
+
+  - `git clone https://github.com/dineshchhantyal/c-project.git`
+
+- Open Folder with VS Code
+
+  - `cd c-project`
+
+  - `code .`
 
 ---
 
 # Github Rules
 
-- Pull The Repo
 - Create Seperate Branch
-  - FEA **name** For New Feature
-  - BUG **name** For Bug Fix
+  - FEA- **name** For New Feature
+  - BUG- **name** For Bug Fix
+    - `git branch {code}-name`
+- Playing Internally
+  - Add - `git add .`
+  - Commit - `git commit -m "{message}"`
+- Push
+  - `git push origin {branch-name}`
 - Create Merge Request is Required. 🎉
 
 ---
