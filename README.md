@@ -27,7 +27,7 @@
   - Add - `git add .`
   - Commit - `git commit -m "{message}"`
 - Push
-  - `git push origin {code}-name`
+  - `git push origin {branch-name}`
 - Create Merge Request is Required. 🎉
 
 ---
