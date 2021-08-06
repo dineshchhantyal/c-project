@@ -32,7 +32,7 @@
 
 ---
 
-# IDEAS
+# DEPENDENCPY
 
-- [ ] Bank/ Management
-- [ ] External Library
+- cmake [https://cmake.org/download/]
+-
