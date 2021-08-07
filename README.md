@@ -23,6 +23,8 @@
   - FEA- **name** For New Feature
   - BUG- **name** For Bug Fix
     - `git branch {code}-name`
+- Checkout to your Branch
+  - `git checkout {code}-name`
 - Playing Internally
   - Add - `git add .`
   - Commit - `git commit -m "{message}"`
