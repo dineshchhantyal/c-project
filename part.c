@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
      int main(){
-            printf("Hello I am Lokesh");
+            printf("Let's build our C project");
             
 return 0;
 }
