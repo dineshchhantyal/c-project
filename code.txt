@@ -1,0 +1,9 @@
+
+************WELCOME TO ELECTORAL SYSTEM 2078************
+
+---- Please select any one of the options given below----
+
+     1. Know About the Leaders
+     2. Cast the Vote
+     3. Show the Result
+     4. Reset System 
