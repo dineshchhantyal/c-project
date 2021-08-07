@@ -36,5 +36,4 @@
 
 # DEPENDENCPY
 
-- cmake [https://cmake.org/download/]
--
+- NO
