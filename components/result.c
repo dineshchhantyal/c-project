@@ -77,5 +77,6 @@ int result(){
         printf("\n\n\t    Sher Bahadur Deuba won the election."); 
     else
         printf("\n\n\t\tThe election is draw.");
+        
     return 0;  
 }

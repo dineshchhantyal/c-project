@@ -2,7 +2,7 @@
 #include "./header/common.h"
 #include "./header/fileHandeling.h"
 #include "./components/clear.c"
-#include "./components/result.h"
+#include "./components/result.c"
 
 void main(){
     printf("%d",sum(1,2));
