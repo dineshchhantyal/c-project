@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int result(){
+int main(){
     FILE *fp;
     int r1,r2,r3,r4;
 
     printf("\t\t    Result!!!!!");
     
-    fp=fopen("./files/leaders/Baburam Bhattarai.txt","r");
+    fp=fopen("../files/leaders/Baburam Bhattarai.txt","r");
        if (fp==NULL){
            printf("\n\n FIle can't be open.");
            exit(1);
@@ -22,7 +22,7 @@ int result(){
        }
     fclose(fp);
 
-    fp=fopen("./files/leaders/KP Oli.txt","r");
+    fp=fopen("../files/leaders/KP Oli.txt","r");
        if (fp==NULL){
            printf("\n FIle can't be open.");
            exit(1);
@@ -37,7 +37,7 @@ int result(){
        }
     fclose(fp);
 
-    fp=fopen("./files/leaders/Puspa Kamal Dahal.txt","r");
+    fp=fopen("../files/leaders/Puspa Kamal Dahal.txt","r");
        if (fp==NULL){
            printf("\n FIle can't be open.");
            exit(1);
@@ -52,7 +52,7 @@ int result(){
        }
     fclose(fp);
 
-    fp=fopen("./files/leaders/Sher Bahadur Deuba.txt","r");
+    fp=fopen("../files/leaders/Sher Bahadur Deuba.txt","r");
        if (fp==NULL){
            printf("\n FIle can't be open.");
            exit(1);
