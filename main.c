@@ -6,8 +6,8 @@
 
 void main(){
     printf("%d",sum(1,2));
-    readFile("./files/controller/leaderControl.txt");
-    clear("./files/controller/leaderControl.txt", "./files/leaders/"); // clear the file BASED ON FILE NAME OF CONTROLLER
+    // readFile("./files/controller/leaderControl.txt");
+    // clear("./files/controller/leaderControl.txt", "./files/leaders/"); // clear the file BASED ON FILE NAME OF CONTROLLER
     result();
 }
 
