@@ -37,7 +37,7 @@
 # Some More Convesion
 
 - Use DRY principle, try to reduce code as much as possible.
-- `0` means true in different section of code where `-1` means false.
+- `0` means true in different section of code where `1` means false.
 
 # DEPENDENCPY
 
