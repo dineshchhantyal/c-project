@@ -7,6 +7,6 @@
 void main(){
     // castVote();
     // readFile("./files/controller/resetController.txt", -1);
-    reset("./files/controller/resetController.txt", "./files/leaders/"); // reset the file BASED ON FILE NAME OF CONTROLLER
+    reset("./files/controller/resetController.txt", "./files/votes/"); // reset the file BASED ON FILE NAME OF CONTROLLER
 }
 
