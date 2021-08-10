@@ -10,7 +10,7 @@ void readFile(char url[20]){
     fp = fopen(url, "r");
     printf(" The name of file is %s", url);
     if (fp == NULL) {
-        printf("File Cannt be open");
+        perror("File Cannt be open");
         exit(1);
     };
     

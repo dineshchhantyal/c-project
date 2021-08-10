@@ -4,8 +4,7 @@
 #include "./components/reset.c"
 
 void main(){
-    printf("%d",sum(1,2));
-    readFile("./files/controller/leaderControl.txt");
+    aboutLeaders();
     reset("./files/controller/leaderControl.txt", "./files/leaders/"); // reset the file BASED ON FILE NAME OF CONTROLLER
 }
 
