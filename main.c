@@ -4,6 +4,6 @@
 #include "./files/components/shift.c"
 
 void main(){
-    readFile("./landingPageInfo.txt");
+    shift();
 }
 

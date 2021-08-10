@@ -1,37 +1,23 @@
-#include<stdio.h>
-#include<conio.h>
-
  
-     int shift(){
-          
-          FILE *fp;
-          int n;
-         first:
-          printf("  Enter your choice (1, 2, 3, 4): ");  
-          scanf("%d",&n);
-   if(n==1)
-    fp=fopen("./files/components/AboutLeaders.txt","r");
-    int ch,num;
-    while((ch=fgetc(fp))!=EOF)
+ int shift(){
+     int operation;
+     readFile("./files/landingPageInfo.txt");
+     printf("Choose 1-4 \n ");
+     scanf("%d", &operation);
+
+     switch (operation)
      {
-          printf("%c",ch);
-     
+     case 1:
+          break;
+     case 2:
+          break;
+     case 3:
+          break;
+     case 4:
+          break;
+     default:
+          printf("Invalid Input \n");
+          break;
      }
-     printf("\nEnter number(1, 2, 3, 4, 5): ");
-     scanf("%d",num);
-   if(num==5)
-   goto first;
-      if(n==2)
-    fp=fopen("./files/components/Cast.txt","r");
-    while((ch=fgetc(fp))!=EOF)
-     {
-          printf("%c",ch);
-     }
-      if(n==3)
-    fp=fopen("./files/components/Result.txt","r");
-    while((ch=fgetc(fp))!=EOF)
-     {
-          printf("%c",ch);
-     }
-return 0;
-}
+     return 0; 
+ }   
