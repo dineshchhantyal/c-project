@@ -13,6 +13,7 @@
           castVote();
           break;
      case 3:
+          result();
           break;
      case 4:
           reset("./files/controller/resetController.txt", "./files/votes/"); // reset the file BASED ON FILE NAME OF CONTROLLER
