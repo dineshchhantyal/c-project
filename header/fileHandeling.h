@@ -17,7 +17,7 @@ int readFile(char url[20], int showCount, char list[50][20],int *arrayLength){
     printf("\n"); // new line
     while (fgets(ch, 120, fp) != NULL) {
         
-        printf("Length %d:", strlen(ch));
+        
         if (ch[strlen(ch) - 1] == '\n') {
             ch[strlen(ch) - 1] = '\0';
         } 
@@ -37,18 +37,18 @@ int readFile(char url[20], int showCount, char list[50][20],int *arrayLength){
     return 0;
 }
 
-int clearFile( char controller[20], char url[20]){
-    FILE *fp;
+int clearFile( char controller_url[20], char url[20]){
+    FILE *controller, *files;
     char ch[120], temp_filename[20] = {"\0"}, temp_baseurl[20];
     strcpy(temp_baseurl,url);
 
-    fp = fopen(controller, "r");
-    if (fp == NULL) {
+    controller = fopen(controller_url, "r");
+    if (controller == NULL) {
         printf("File Cannt be open");
         return 1;
     };
     
-    while (fgets(ch, 120, fp) != NULL) {
+    while (fgets(ch, 120, controller) != NULL) {
         strcpy(temp_filename, ch);
         //  if temp_filename contain new line
         if (temp_filename[strlen(temp_filename)-1] == '\n') {
@@ -56,11 +56,12 @@ int clearFile( char controller[20], char url[20]){
         }
         strcat(temp_filename, ".txt");  
         strcat(temp_baseurl, temp_filename);
-        fclose(fopen(temp_baseurl, "w"));
+        files = fopen(temp_baseurl, "w");
+        fprintf(files, "%d", 0);
         strcpy(temp_filename,"");
         strcpy(temp_baseurl,url);   
     }
-    fclose(fp);
+    fclose(controller);
     printf("All files cleared !");
     return 0;
 }
@@ -71,7 +72,7 @@ int addVote(char leaderName[50]){
     long numberOfVotes;
     char url[60], vote;
     printf("\n \n \n ---Adding vote--- \n");
-    strcpy(url, "../files/leaders/");
+    strcpy(url, "./files/leaders/");
     strcat(url, leaderName);
     strcat(url, ".txt");
 
@@ -94,7 +95,7 @@ int addID(int voterID){
     FILE *voter;
 
     printf("The id is %d", voterID);
-    voter  = fopen("../files/voters.txt", "a");
+    voter  = fopen("./files/voters.txt", "a");
     if (voter == NULL) {
         printf("File Cannt be open");
         return 1;

@@ -1,15 +1,11 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include "../header/fileHandeling.h"
-#include "../header/common.h"
 
-int main(){
+int castVote(){
     unsigned int voterID, id, leaderCode, numberOfLeader;
     char leaderName[50][20], conformation;
     printf("Please Enter Voter Id :");
     scanf("%u",&voterID);
 
-    FILE *fp = fopen("../files/voters.txt","r");
+    FILE *fp = fopen("./files/voters.txt","r");
     if(fp == NULL){
         printf("Trouble Identifing Voter ID ");
         return -1;
@@ -22,7 +18,7 @@ int main(){
     }
     fclose(fp);
     printf("S.N \t Leader");
-    readFile("../files/leaderNames.txt", 1, leaderName, &numberOfLeader); //showCount = 1 
+    readFile("./files/leaderNames.txt", 1, leaderName, &numberOfLeader); //showCount = 1 
     printf("\n");
     printf("Select the leader using S.N : ");
     scanf("%u",&leaderCode);
