@@ -1,14 +1,9 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include "../header/fileHandeling.h"
-
-int main()
+int aboutLeaders()
 {
     int num,loop=1;
     char ask;
     while (loop)
     {
-        putchar('\n');
         FILE *content = fopen("../files/aboutLeaders.txt","r");
 
         if(content == NULL)
@@ -36,7 +31,7 @@ int main()
             readFile("../files/leaders/KP Oli.txt");
             break;
         case 4:
-            readFile("../files/leaders/M Kishore Reddy.txt");
+            readFile("../files/leaders/Baburam Bhattarai.txt");
             break;
         case 5:
             return 0;
@@ -62,23 +57,8 @@ int main()
         }
     }
     while (ask != 'y' || ask != 'n');
-        
-
     }
-    
-        FILE *content = fopen("../files/aboutLeaders.txt","r");
-
-    if(content == NULL)
-    {
-        perror("Unable to open the file");
-        exit(1);
-    }
-    char line[100];
-    while(fgets(line,sizeof(line),content))
-        {
-            printf("%s",line);
-        }
-    
+     
     return 0;
 }   
 

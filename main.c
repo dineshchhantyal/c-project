@@ -5,4 +5,5 @@
 void main(){
     printf("%d",sum(1,2));
     readFile("./test.txt");
+    aboutLeaders();
 }
