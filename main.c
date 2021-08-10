@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include "./header/common.h"
 #include "./header/fileHandeling.h"
+#include "./components/reset.c"
 
 void main(){
-    printf("%d",sum(1,2));
-    readFile("./test.txt");
     aboutLeaders();
+    reset("./files/controller/leaderControl.txt", "./files/leaders/"); // reset the file BASED ON FILE NAME OF CONTROLLER
 }
+

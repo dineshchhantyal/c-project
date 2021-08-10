@@ -30,11 +30,18 @@
   - Commit - `git commit -m "{message}"`
 - Push
   - `git push origin {branch-name}`
-- Create Merge Request is Required. 🎉
+- Create Merge Request. 🎉 and Inform Other to Review. 🕺
 
 ---
 
+# How to Check Other's Branch
+
+- Fetch all the remote branches
+  - `git fetch`
+- Checkout to specific branch
+  - `git checkout {branch-name}`
+- Please don't forget to give comment or review on respective branch. 🕺
+
 # DEPENDENCPY
 
-- cmake [https://cmake.org/download/]
--
+- NO
