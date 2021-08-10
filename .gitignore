@@ -985,6 +985,8 @@ _deps
 
 # Executables
 *.exe
+*/*.exe
+test.*
 *.out
 *.app
 
@@ -1041,3 +1043,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
