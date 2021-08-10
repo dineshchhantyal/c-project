@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include "./header/common.h"
 #include "./header/fileHandeling.h"
-#include "./files/components/shift.c"
+#include "./components/aboutLeaders.c"
 #include "./components/reset.c"
+#include "./components/cast.c"
+#include "./components/shift.c"
+
 
 void main(){
     shift();
-    aboutLeaders();
-    reset("./files/controller/leaderControl.txt", "./files/leaders/"); // reset the file BASED ON FILE NAME OF CONTROLLER
 }
 

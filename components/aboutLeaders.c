@@ -4,7 +4,7 @@ int aboutLeaders()
     char ask;
     while (loop)
     {
-        FILE *content = fopen("../files/aboutLeaders.txt","r");
+        FILE *content = fopen("./files/aboutLeaders.txt","r");
 
         if(content == NULL)
         {
@@ -22,16 +22,16 @@ int aboutLeaders()
         switch (num)
         {
         case 1:
-            readFile("../files/leaders/Sher Bahadur Deuba.txt");
+            readFile("./files/leaders/Sher Bahadur Deuba.txt", 1, NULL, NULL);
             break;
         case 2:
-            readFile("../files/leaders/Puspa Kamal Dahal.txt");
+            readFile("./files/leaders/Puspa Kamal Dahal.txt", 1, NULL, NULL);
             break;
         case 3:
-            readFile("../files/leaders/KP Oli.txt");
+            readFile("./files/leaders/KP Oli.txt", 1, NULL, NULL);
             break;
         case 4:
-            readFile("../files/leaders/Baburam Bhattarai.txt");
+            readFile("./files/leaders/Baburam Bhattarai.txt", 1, NULL, NULL);
             break;
         case 5:
             return 0;

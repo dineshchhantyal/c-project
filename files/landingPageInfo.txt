@@ -6,5 +6,6 @@
      1. Know About the Leaders
      2. Cast the Vote
      3. Show the Result
-     4. Reset System 
+     4. Reset System
+     5. Exit 
 
