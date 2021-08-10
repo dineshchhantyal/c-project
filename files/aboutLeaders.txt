@@ -1,0 +1,8 @@
+To know about leaders participating in election, enter the following number:
+
+1   Sher Bahadur Deuba
+2   Puspa Kamal Dahal
+3   KP Oli
+4   Baburam Bhattarai
+
+5 to return to main menu

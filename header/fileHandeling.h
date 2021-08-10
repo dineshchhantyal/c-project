@@ -10,27 +10,26 @@ int readFile(char url[20], int showCount, char list[50][20],int *arrayLength){
 
     fp = fopen(url, "r");
     if (fp == NULL) {
-        printf("File Cannt be open");
+        perror("File Cannt be open");
         return 1;
     };
     
     printf("\n"); // new line
     while (fgets(ch, 120, fp) != NULL) {
         
-        
-        if (ch[strlen(ch) - 1] == '\n') {
-            ch[strlen(ch) - 1] = '\0';
-        } 
-        if (showCount==1) {
+        if (showCount==0) {
+            if (ch[strlen(ch) - 1] == '\n') {
+                ch[strlen(ch) - 1] = '\0';
+            } 
             printf("%d. \t", count);
             strcpy(list[count-1], ch);
             count++;
+            *arrayLength = count - 1 ;
         }
         printf("%s", ch);
         printf("\n");
     }
 
-    *arrayLength = count -1 ;
     count = 1;
     printf("\n"); // new line
     fclose(fp);
@@ -57,9 +56,11 @@ int clearFile( char controller_url[20], char url[20]){
         strcat(temp_filename, ".txt");  
         strcat(temp_baseurl, temp_filename);
         files = fopen(temp_baseurl, "w");
+
         fprintf(files, "%d", 0);
         strcpy(temp_filename,"");
         strcpy(temp_baseurl,url);   
+        fclose(files);
     }
     fclose(controller);
     printf("All files cleared !");
@@ -69,10 +70,10 @@ int clearFile( char controller_url[20], char url[20]){
 
 int addVote(char leaderName[50]){
     FILE *leader;
-    long numberOfVotes;
+    int numberOfVotes;
     char url[60], vote;
     printf("\n \n \n ---Adding vote--- \n");
-    strcpy(url, "./files/leaders/");
+    strcpy(url, "./files/votes/");
     strcat(url, leaderName);
     strcat(url, ".txt");
 
@@ -82,11 +83,11 @@ int addVote(char leaderName[50]){
         return 1;
     };
     // read int of leaders votes
-    fscanf(leader, "%ld", &numberOfVotes);
+    fscanf(leader, "%d", &numberOfVotes);
     rewind(leader);
     if (numberOfVotes > 0) numberOfVotes+=1;
     else numberOfVotes = 1;
-    fprintf(leader, "%ld", numberOfVotes);
+    fprintf(leader, "%d", numberOfVotes);
     fclose(leader);
     
 }

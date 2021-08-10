@@ -18,7 +18,7 @@ int castVote(){
     }
     fclose(fp);
     printf("S.N \t Leader");
-    readFile("./files/leaderNames.txt", 1, leaderName, &numberOfLeader); //showCount = 1 
+    readFile("./files/leaderNames.txt", 0, leaderName, &numberOfLeader); //showCount = 1 
     printf("\n");
     printf("Select the leader using S.N : ");
     scanf("%u",&leaderCode);

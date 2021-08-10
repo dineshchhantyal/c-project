@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include "./header/common.h"
 #include "./header/fileHandeling.h"
+#include "./components/aboutLeaders.c"
 #include "./components/reset.c"
 #include "./components/cast.c"
+#include "./components/shift.c"
+
 
 void main(){
-    // castVote();
-    // readFile("./files/controller/resetController.txt", -1);
-    reset("./files/controller/resetController.txt", "./files/votes/"); // reset the file BASED ON FILE NAME OF CONTROLLER
+    shift();
 }
 
