@@ -1,6 +1,8 @@
+int shift();
+
 int result(){
     FILE *result;
-    int r1,r2,r3,r4;
+    int r1,r2,r3,r4, yesNo;
 
     printf("\t\t    Result!!!!!");
     
@@ -74,6 +76,10 @@ int result(){
         printf("\n\n\t    Sher Bahadur Deuba won the election."); 
     else
         printf("\n\n\t\tThe election is draw.");
-        
+    
+    printf("\n \n \n  Back To Home ? \n [Y] : Yes \t [N] : No \n : -> ");
+    scanf(" %c", &yesNo);
+    if (checkYesNo(yesNo) == 0) shift();
+
     return 0;  
 }
