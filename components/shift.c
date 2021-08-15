@@ -3,7 +3,6 @@
      readFile("./files/landingPageInfo.txt", 1, NULL, NULL);
      printf("Choose 1-4 :");
      scanf("%d", &operation);
-
      switch (operation)
      {
      case 1:
