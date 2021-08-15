@@ -72,14 +72,14 @@ int addVote(char leaderName[50]){
     FILE *leader;
     int numberOfVotes;
     char url[60], vote;
-    printf("\n \n \n ---Adding vote--- \n");
+    cprintf("p","\n \n \n ---Adding vote--- \n\n");
     strcpy(url, "./files/votes/");
     strcat(url, leaderName);
     strcat(url, ".txt");
 
     leader = fopen(url, "r+");
     if (leader == NULL) {
-        printf("File Cannt be open");
+        cprintf("r","File Cannt be open");
         return 1;
     };
     // read int of leaders votes
@@ -95,12 +95,13 @@ int addVote(char leaderName[50]){
 int addID(int voterID){
     FILE *voter;
 
-    printf("The id is %d", voterID);
     voter  = fopen("./files/voters.txt", "a");
     if (voter == NULL) {
-        printf("File Cannt be open");
+        cprintf("r","File Cannt be open");
         return 1;
     };
     fprintf(voter,"\n %d", voterID);
+    printf("Vote id : %d \n", voterID);
+    cprintf("g","successfully registered.");
     fclose(voter);
 }
