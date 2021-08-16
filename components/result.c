@@ -33,9 +33,7 @@ int result(){
                 line=i;
             }
         }
-    fclose(result);
-
-    result=fopen("./files/leaderNames.txt","r");
+        rewind(result);
         for (i=0;fscanf(result," %[^\n]",leaders)!=EOF;i++){
             if (i==line)
                 printf("\n\n\n\t %s won the election.",leaders);
