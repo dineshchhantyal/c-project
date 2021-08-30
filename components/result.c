@@ -2,8 +2,12 @@ int result(){
     FILE *result,*fp;
     char leaders[50],name[50];
     int i=0,r[4],win,line;
-    printf(" ----------------------Result!!!!-----------------------\n");
 
+    printf("\033[1;31m");
+    printf(" ----------------------Result!!!!-----------------------\n");
+    printf("\033[0m");
+    
+    printf("\033[0;32m");
     result=fopen("./files/leaderNames.txt","r");
         while(fscanf(result," %[^\n]",leaders)!=EOF){
             char filename[50]="./files/votes/",ext[5]=".txt";
@@ -25,7 +29,8 @@ int result(){
                 }
             fclose(fp);
             i++;
-        } 
+        }
+        printf("\033[0m");
         win=r[0];
         for (i = 0; i < 4; i++){
             if (win<r[i]){
@@ -35,8 +40,11 @@ int result(){
         }
         rewind(result);
         for (i=0;fscanf(result," %[^\n]",leaders)!=EOF;i++){
-            if (i==line)
+            if (i==line){
+                printf("\033[1;33m");
                 printf("\n\n\n\t %s won the election.",leaders);
+                printf("\033[0m");
+            }
         }
     fclose(result);
 
