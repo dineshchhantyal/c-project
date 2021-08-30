@@ -45,7 +45,7 @@ int aboutLeaders()
             break;
         }
     printf("\033[0;37m"); 
-    printf("\nDo you want to read about other leaders?(y for yes and n for no)\n");
+    printf("\nDo you want to read about other leaders?\n [Y] : Yes \t [N] : No \n : ->\n");
     do
     {
         scanf("%c",&ask);
