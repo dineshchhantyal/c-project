@@ -22,15 +22,19 @@ int aboutLeaders()
         switch (num)
         {
         case 1:
+            printf("\033[1;31m");
             readFile("./files/leaders/Sher Bahadur Deuba.txt", 1, NULL, NULL);
             break;
         case 2:
+            printf("\033[0;32m");
             readFile("./files/leaders/Puspa Kamal Dahal.txt", 1, NULL, NULL);
             break;
         case 3:
+            printf("\033[0;33m");
             readFile("./files/leaders/KP Oli.txt", 1, NULL, NULL);
             break;
         case 4:
+            printf("\033[0;35m");
             readFile("./files/leaders/Baburam Bhattarai.txt", 1, NULL, NULL);
             break;
         case 5:
@@ -40,8 +44,8 @@ int aboutLeaders()
             printf("Invalid input\n");
             break;
         }
-     
-    printf("\nDo you want to read about other leaders?(y for yes and n for no)\n");
+    printf("\033[0;37m"); 
+    printf("\nDo you want to read about other leaders?\n [Y] : Yes \t [N] : No \n : ->\n");
     do
     {
         scanf("%c",&ask);
