@@ -1,6 +1,6 @@
 int result(){
     FILE *result,*fp;
-    char leaders[50],name[50];
+    char leaders[50],name[50],c;
     int i=0,r[4],win,line;
 
     printf("\033[1;31m");
@@ -47,6 +47,9 @@ int result(){
             }
         }
     fclose(result);
+
+    printf("\n Press Any Key For Main Menu : \t");
+    scanf(" %c", &c);
 
     return 0;   
 }
