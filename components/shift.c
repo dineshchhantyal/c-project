@@ -1,5 +1,8 @@
  int shift(){
      int operation, end;
+
+     cprintf("y", "\n \n ************WELCOME TO ONLINE ELECTORAL SYSTEM 2078************ \n \n");
+     cprintf("g", "---- Please select any one of the options given below----");
      readFile("./files/landingPageInfo.txt", 1, NULL, NULL);
      printf("Choose 1-4 :");
      scanf("%d", &operation);
