@@ -1,16 +1,24 @@
 
+// check length of string and return 1 if too long
+
 int validEntry(int entry, int max){
     if(entry < 1 || entry > max){
         printf("Value out of range");
-        return -1;
+        return 0;
     }
     return 1;
 }
+
+// this is kind of boolean checking if user enters yes[y] or no[n]
 
 int checkYesNo(char intput){
     if (intput == 'y' || intput == 'Y') return 0;
     else return 1;
 }
+
+// cprinf(color, string)
+// color is the color of the text, we are using RGYP only for now
+// string is the string we want to print
 
 
 void cprintf(char color[], char txt[]){
