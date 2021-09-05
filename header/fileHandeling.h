@@ -2,6 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 
+// readFile(url, showCount, array, arraySize)
+// url = file url
+// showCount = "0" if you want to show the count of the lines
+// array = push every element to this array
+// arraySize = the size of the array
 
 int readFile(char url[20], int showCount, char list[50][20],int *arrayLength){
     FILE *fp;
@@ -36,6 +41,10 @@ int readFile(char url[20], int showCount, char list[50][20],int *arrayLength){
     return 0;
 }
 
+// clearFile(controller_url, url)
+// controller_url = the url of the controller file, this include which file are to be cleared
+// url = base path for all the files
+
 int clearFile( char controller_url[20], char url[20]){
     FILE *controller, *files;
     char ch[120], temp_filename[20] = {"\0"}, temp_baseurl[20];
@@ -67,6 +76,10 @@ int clearFile( char controller_url[20], char url[20]){
     return 0;
 }
 
+// addVote(leaderName)
+// leaderName = the name of the leader
+// this is dymanic function, it will add the vote to the file
+// dont use random leaderName, it is based on file name.
 
 int addVote(char leaderName[50]){
     FILE *leader;
@@ -91,6 +104,10 @@ int addVote(char leaderName[50]){
     fclose(leader);
     
 }
+
+// addID(id)
+// id = unique id of voters
+// return 1 if id is already exist
 
 int addID(int voterID){
     FILE *voter;

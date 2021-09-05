@@ -21,6 +21,9 @@
           reset("./files/controller/resetController.txt", "./files/votes/"); // reset the file BASED ON FILE NAME OF CONTROLLER
           break;     
      default:
+          cprintf("g", "\n\t Thank you for using our online system \n \n");
+          cprintf("r", "Developer :");
+          cprintf("p", " @dineshchhantyal (BCT026), @ashreempandey (BCT014), @lokeshpandey (BCT040), @ManishKunwar(BCT045) \n\n");
           end = 0;
           break;
      }

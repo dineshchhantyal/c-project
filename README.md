@@ -1,4 +1,4 @@
-# C-PROJECT
+# C-PROJECT (Election System)
 
 ### How to Run?
 
@@ -38,14 +38,11 @@
 
 - Use DRY principle, try to reduce code as much as possible.
 - `0` means true in different section of code where `1` means false.
-# How to Check Other's Branch
-
-- Fetch all the remote branches
-  - `git fetch`
-- Checkout to specific branch
-  - `git checkout {branch-name}`
-- Please don't forget to give comment or review on respective branch. 🕺
 
 # DEPENDENCPY
 
-- NO
+- JavaScript 😀
+  We did something to show _result_ section live through internet, using socket.io.
+  - GitHub For [C-Project-Web](https://github.com/dineshchhantyal/c-project-web.git) (**Our Add-On**)
+
+## Developer : @dineshchhantyal (BCT026), @ashreempandey (BCT014), @lokeshpandey (BCT040), @ManishKunwar(BCT045)
