@@ -39,9 +39,10 @@
 - Use DRY principle, try to reduce code as much as possible.
 - `0` means true in different section of code where `1` means false.
 
-
 # DEPENDENCPY
 
-- JavaScript 😀 
-   We did something to show *result* section live through internet, using socket.io.
-   - GitHub For [C-Project-Web](https://github.com/dineshchhantyal/c-project-web.git) (**Our Add-On**)
+- JavaScript 😀
+  We did something to show _result_ section live through internet, using socket.io.
+  - GitHub For [C-Project-Web](https://github.com/dineshchhantyal/c-project-web.git) (**Our Add-On**)
+
+## Developer : @dineshchhantyal (BCT026), @ashreempandey (BCT014), @lokeshpandey (BCT040), @ManishKunwar(BCT045)
