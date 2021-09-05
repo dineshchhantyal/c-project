@@ -21,6 +21,7 @@
           reset("./files/controller/resetController.txt", "./files/votes/"); // reset the file BASED ON FILE NAME OF CONTROLLER
           break;     
      default:
+          cprintf("g", "\n\t Thank you for using our online system \n \n");
           end = 0;
           break;
      }
