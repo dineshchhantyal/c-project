@@ -1,8 +1,9 @@
  int shift(){
      int operation, end;
-
+     sleep(1);
      cprintf("y", "\n \n ************WELCOME TO ONLINE ELECTORAL SYSTEM 2078************ \n \n");
      cprintf("g", "---- Please select any one of the options given below----");
+     sleep(0.2);
      readFile("./files/landingPageInfo.txt", 1, NULL, NULL);
      printf("Choose 1-4 :");
      scanf("%d", &operation);
@@ -29,5 +30,4 @@
      }
      if (end == 0) return 0;
      else return shift();
-
- }   
+}   
