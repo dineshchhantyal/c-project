@@ -1,7 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-
 // readFile(url, showCount, array, arraySize)
 // url = file url
 // showCount = "0" if you want to show the count of the lines

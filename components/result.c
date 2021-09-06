@@ -50,6 +50,6 @@ int result(){
 
     printf("\n Press Any Key For Main Menu : \t");
     scanf(" %c", &c);
-
+    sleep(1);
     return 0;   
 }
